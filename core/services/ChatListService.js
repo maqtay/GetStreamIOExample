@@ -1,6 +1,4 @@
 class ChatListService{
-    async getChatList(userid, password) {
-        
-    }
+    // TODO add new functions
 }
 export default new ChatListService();

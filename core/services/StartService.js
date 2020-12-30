@@ -5,7 +5,7 @@ class StartService{
     init(key) {
         return new Promise((resolve, reject) => {
             GLOBALS.client = new StreamChat(key);
-            console.log("Stream bağlantısı kuruldu!");
+            console.log("Stream connection opened!");
             resolve(true);
         })
     }

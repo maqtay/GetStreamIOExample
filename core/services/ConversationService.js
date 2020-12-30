@@ -1,6 +1,6 @@
 import GLOBALS  from '../../globals';
-class ConversationService {
 
+class ConversationService {
     async newConversation(toUserId) {
         return new Promise((resolve, reject) => {
             const conversation = GLOBALS.client.channel('messaging', {
