@@ -10,8 +10,8 @@ export default class Login extends React.Component {
         this.state = {
             username: '',
         }
-        
-        this.key = 'kfdt4p96r5hh';
+
+        this.key = 'your api key';
         this.login = this.login.bind(this);
         this.signup = this.signup.bind(this);
     }
@@ -39,20 +39,20 @@ export default class Login extends React.Component {
     }
     render() {
         return (
-            <View style={ styles.container }>
-                <Text style={ styles.head }>Login Page</Text>
-                <TextInput
-                    style={styles.inputVw}
-                    placeholder='Username'
-                    onChangeText={value => this.setState({username: value})}
-                />
-                <TouchableOpacity style={styles.loginBtn} onPress={this.login}>
-                    <Text style={styles.btnText}> Login</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.signupBtn} onPress={this.signup}>
-                    <Text style={styles.btnText}>Signup</Text>
-                </TouchableOpacity>
-            </View>
+          <View style={styles.container}>
+            <Text style={styles.head}> Login Page </Text>{" "}
+            <TextInput
+              style={styles.inputVw}
+              placeholder="Username"
+              onChangeText={(value) => this.setState({ username: value })}
+            />{" "}
+            <TouchableOpacity style={styles.loginBtn} onPress={this.login}>
+              <Text style={styles.btnText}> Login </Text>{" "}
+            </TouchableOpacity>{" "}
+            <TouchableOpacity style={styles.signupBtn} onPress={this.signup}>
+              <Text style={styles.btnText}> Signup </Text>{" "}
+            </TouchableOpacity>{" "}
+          </View>
         );
     }
 }
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center'
     },
-    head:{
+    head: {
         fontSize: 30,
         marginBottom: 40
     },
